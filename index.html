@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript: Selectores, Eventos y Funciones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Conceptos básicos de JavaScript</h1>
+    <p>Aprende sobre selectores, eventos y funciones en una forma sencilla.</p>
+  </header>
+
+  <main class="contenedor">
+    <section class="tarjeta" id="selectores">
+      <h2>Selectores</h2>
+      <p>Los <strong>selectores</strong> en JavaScript sirven para acceder a los elementos del HTML desde el código. 
+      Con ellos podemos cambiar texto, estilos o valores.</p>
+      <ul>
+        <li><code>document.getElementById()</code></li>
+        <li><code>document.querySelector()</code></li>
+        <li><code>document.querySelectorAll()</code></li>
+      </ul>
+      <button id="botonSelector">Ejemplo de Selector</button>
+      <p id="textoSelector">Este texto cambiará con un selector.</p>
+    </section>
+
+    <section class="tarjeta" id="eventos">
+      <h2>Eventos</h2>
+      <p>Los <strong>eventos</strong> permiten que el navegador “reaccione” a las acciones del usuario, 
+      como hacer clic, mover el ratón o escribir.</p>
+      <ul>
+        <li><code>click</code> – Al hacer clic en un elemento</li>
+        <li><code>mouseover</code> – Al pasar el ratón</li>
+        <li><code>keyup</code> – Al soltar una tecla</li>
+      </ul>
+      <button id="botonEvento">Haz clic aquí</button>
+      <p id="mensajeEvento"></p>
+    </section>
+
+    <section class="tarjeta" id="funciones">
+      <h2>Funciones</h2>
+      <p>Las <strong>funciones</strong> son bloques de código que realizan una tarea específica y 
+      pueden reutilizarse cuando se necesite.</p>
+      <pre><code>function saludar(nombre) {
+  alert("Hola " + nombre);
+}</code></pre>
+      <input type="text" id="nombreInput" placeholder="Escribe tu nombre">
+      <button id="botonFuncion">Saludar</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ en JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
